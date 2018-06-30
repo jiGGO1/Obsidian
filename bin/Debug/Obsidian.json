@@ -1,0 +1,31 @@
+{
+    "TitleColor": {
+        "R": 0,
+        "G": 0,
+        "B": 0
+    },
+    "BackColor": {
+        "R": 255,
+        "G": 255,
+        "B": 255
+    },
+    "FontColor": {
+        "R": 0,
+        "G": 42,
+        "B": 214
+    },
+    "ButtemColor": {
+        "R": 0,
+        "G": 51,
+        "B": 88
+    },
+    "TitleButtonColor": true,
+    "TitleFontColor": true,
+    "EmailOrName": "",
+    "Password": "",
+    "PositiveEdition": false,
+    "Width": 1280,
+    "Height": 680,
+    "GameRootPath": "",
+    "JavaPath": ""
+}

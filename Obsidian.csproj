@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{020673A2-BF5F-4DBD-8070-4937D655107D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Obsidian</RootNamespace>
+    <AssemblyName>Obsidian</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>obsidian.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin">
+      <HintPath>F:\下载垃圾2\Downloads\CSkin 16.1.14.2\CSkin 4.0\CSkin.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="KMCCC.Pro">
+      <HintPath>..\..\KMCCC.Pro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\JavaScript\json\Bin\net20\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Launcher\App.cs" />
+    <Compile Include="Launcher\ConfigureColor.cs" />
+    <Compile Include="Launcher\Configure.cs" />
+    <Compile Include="Launcher\ConfigureFile.cs" />
+    <Compile Include="My\UctDownload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My\UctDownload.Designer.cs">
+      <DependentUpon>UctDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My\UctGame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My\UctGame.Designer.cs">
+      <DependentUpon>UctGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My\UctInit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My\UctInit.Designer.cs">
+      <DependentUpon>UctInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Obsidian\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Obsidian\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="My\UctDownload.resx">
+      <DependentUpon>UctDownload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My\UctGame.resx">
+      <DependentUpon>UctGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My\UctInit.resx">
+      <DependentUpon>UctInit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obsidian\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\false_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\false_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ture_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ture_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="KMCCC.Pro.dll" />
+    <EmbeddedResource Include="Newtonsoft.Json.dll" />
+    <Content Include="obsidian.ico" />
+    <None Include="Resources\back1.png" />
+    <None Include="Resources\Download_0.png" />
+    <Content Include="Resources\false_2.png" />
+    <None Include="Resources\ture_3.png" />
+    <None Include="Resources\obsidian.png" />
+    <None Include="Resources\false_3.png" />
+    <None Include="Resources\Game_0.png" />
+    <None Include="Resources\Setup_0.png" />
+    <Content Include="Resources\ture_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tools\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

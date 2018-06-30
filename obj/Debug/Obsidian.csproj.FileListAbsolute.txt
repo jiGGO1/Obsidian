@@ -1,0 +1,11 @@
+F:\C#窗口\Obsidian\Obsidian\obj\Debug\Obsidian.csprojResolveAssemblyReference.cache
+F:\C#窗口\Obsidian\Obsidian\obj\Debug\Obsidian.Properties.Resources.resources
+F:\C#窗口\Obsidian\Obsidian\obj\Debug\Obsidian.csproj.GenerateResource.Cache
+F:\C#窗口\obsidian\Obsidian\bin\Debug\Obsidian.exe
+F:\C#窗口\obsidian\Obsidian\bin\Debug\Obsidian.pdb
+F:\C#窗口\obsidian\Obsidian\obj\Debug\Obsidian.exe
+F:\C#窗口\obsidian\Obsidian\obj\Debug\Obsidian.pdb
+F:\C#窗口\obsidian\Obsidian\obj\Debug\Obsidian.FrmMain.resources
+F:\C#窗口\obsidian\Obsidian\obj\Debug\Obsidian.My.UctInit.resources
+F:\C#窗口\obsidian\Obsidian\obj\Debug\Obsidian.My.UctGame.resources
+F:\C#窗口\obsidian\Obsidian\obj\Debug\Obsidian.My.UctDownload.resources
